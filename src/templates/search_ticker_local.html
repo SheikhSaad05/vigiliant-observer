@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DeepMind &mdash;</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords"
+		content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	DESIGNED & DEVELOPED by Data Science Team
+		
+
+	//////////////////////////////////////////////////////
+	-->
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/static/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/static/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="/static/css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="/static/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="/static/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="/static/js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div id="fh5co-page">
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+
+			<h1 id="fh5co-logo"><a href="home"><i> DeepMind</i></a></h1>
+			<nav id="fh5co-main-menu" role="navigation">
+				<ul>
+					<li><a href="home">Home</a></li>
+					<li><a href="search_ticker">Search Youtube Ticker</a></li>
+					<li class="fh5co-active"><a href="search_ticker_local">Search Local Ticker</a></li>
+
+				</ul>
+			</nav>
+
+			<div class="fh5co-footer">
+				<p><small>&copy; All Rights Reserved</span> <span>Project by Muhammad Saad </span></small></p>
+				<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="fh5co-main">
+			<div id="get-in-touch">
+				<div class="fh5co-narrow-content">
+					<div class="row">
+						<div class="col-md-9 animate-box" data-animate-effect="fadeInLeft"
+							style="width: 100%; margin-left: 20%; margin-right: 20%;">
+							<h1 class="fh5co-heading-colored">Text/Ticker Tracking & Capturing Module Stored Videos
+							</h1>
+						</div>
+					</div>
+
+
+					<form id="extract_text_local" method="POST" enctype="multipart/form-data"
+						onsubmit="return validateForm()">
+						<div class="row row-bottom-padded-md">
+							<div class="col-md-3 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<p>
+									<label for="directory_name">Enter Directory Name:</label>
+									<input type="text" id="directory_name" name="directory_name" />
+								</p>
+								<p>
+									<label for="user_text">Enter Words:</label>
+									<textarea id="user_text" name="ticker" rows="4"></textarea>
+								</p>
+							</div>
+							<!--<div class="col-md-3 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+								<label for="src_video">Select a Video file:</label>
+								<input type="file" id="src_video" name="source_video" accept="video/*"/>
+							<p></p>
+						</div>-->
+							<!-- <div class="col-md-3 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<label for="src_video_url">Enter local video path</label>
+								<input type="text" id="src_video_url" name="source_video_url" />
+							</div> -->
+
+							<div class="col-md-3 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<label for="source_video">Select the Video file:</label>
+								<input type="file" id="source_video" name="source_video"
+									accept="video/mp4,video/wmv,video/mkv,video/*" />
+								<p></p>
+							</div>
+							<div class="col-md-3 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								</br>
+								<p>
+									<button class="btn-warning" type="submit" id="submit-button">Submit</button>
+								</p>
+							</div>
+						</div>
+
+						<div id="loading" style="display:none">
+							Your request is being processed ..
+						</div>
+
+					</form>
+					<div class="col-md-3 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+						<p>
+							<button class="btn-warning" type="button" id="stop-button" onclick="stopService()"
+								disabled>Stop
+								Service</button>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<style>
+				.image-container {
+					display: inline-block;
+					width: 320px;
+					margin: 10px;
+					text-align: center;
+				}
+			</style>
+
+
+
+			<div class="fh5co-narrow-content">
+				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Matching Results</h2>
+				<div class="row row-bottom-padded-md">
+					<!-- <div  class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft"> -->
+					<div id="image-gallery">
+						<div class="blog-entry">
+							<!-- <span id="time-span"><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span> -->
+							<!-- <div class="desc">
+								<h3><a href="#">Inspirational Website</a></h3>
+								<span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+								<p>Design must be functional and functionality must be translated into visual aesthetics</p>
+								<a href="#" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+							</div> -->
+						</div>
+					</div>
+					<!-- </div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="/static/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="/static/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="/static/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="/static/js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="/static/js/jquery.flexslider-min.js"></script>
+
+
+	<!-- MAIN JS -->
+	<script src="/static/js/main.js"></script>
+
+	<script>
+		function validateForm() {
+			var videoFile = document.getElementById("source_video").value;
+			var channel_text = document.getElementById("directory_name").value;
+			var user_input = document.getElementById("user_text").value;
+			var words = user_input.split(/\s+/); // Split the input by whitespace
+			for (var i = 0; i < words.length; i++) {
+				if (words[i].trim() === "") {
+					alert("Please enter Valid Words .");
+				}
+			}
+			//console.log(text_box)
+			// console.log(imageFile,videoFile)
+			var errorMessage = "";
+
+			if (!videoFile) {
+				errorMessage += "Please Enter Valid Video URL.\n";
+			}
+
+			if (!user_input) {
+				errorMessage += "Please Enter the text which is to be found in the Video.\n";
+			}
+
+			if (!channel_text) {
+				errorMessage += "Please Enter the Channel Name.\n";
+			}
+
+			if (errorMessage !== "") {
+				alert(errorMessage);
+				return false;
+			}
+
+			var submitButton = document.getElementById("submit-button");
+			submitButton.disabled = true;
+
+			document.getElementById("stop-button").disabled = false;
+
+			document.getElementById("loading").style.display = "block";
+			document.getElementById("loading").style.color = "red";
+		}
+	</script>
+	<script>
+		window.to_stop_display_images = true
+		function displayImages() {
+			if (window.to_stop_display_images === true) {
+				return; // Stop execution if flag is set to false
+			}
+			$.getJSON("/display_images", function (data) {
+				var imageUrls = data.image_urls;
+				var imageContainer = $("#image-gallery");
+				// console.log(data)
+
+				// Clear existing images
+				imageContainer.empty();
+
+				// Display images
+				for (var i = 0; i < imageUrls.length; i++) {
+					var imageUrl = imageUrls[i];
+					var fileName = imageUrl.replace(/\\/g, '/');
+					fileName = fileName.split('/').pop(); // extract file name from path
+					// console.log(imageUrl)
+					var imgElement = $("<img>").attr("src", imageUrl).attr('width', '300').attr('height', '200');
+					var captionElem = $('<p>').text(fileName); // create new p element with file name
+					var containerElem = $('<div>').addClass('image-container').append(imgElement, captionElem); // create container div with img and p elements
+					imageContainer.append(containerElem);
+				}
+
+				// Continue displaying images
+				setTimeout(displayImages, 2000);
+			});
+		}
+		displayImages();
+	</script>
+	<script>
+		$(function () {
+			$('#extract_text_local').submit(function (event) {
+				event.preventDefault();
+
+				// Send the video file to the server
+				var formData = new FormData($(this)[0]);
+				// console.log(formData)
+				$.ajax({
+					url: '/extract_text_local',
+					type: 'POST',
+					data: formData,
+					processData: false,
+					contentType: false,
+
+					beforeSend: function () {
+						window.to_stop_display_images = false
+						setTimeout(3000);
+						displayImages();
+
+					},
+
+					success: function (response) {
+						// Get a reference to the div element
+						const myDiv = document.getElementById('image-gallery');
+
+						// Remove any existing child nodes (i.e. images)
+						while (myDiv.firstChild) {
+							myDiv.removeChild(myDiv.firstChild);
+						}
+						// // Hide the progress bar
+						// $('#progress-bar').hide();
+						// console.log(response)
+						// Display the extracted frames
+						if ('error' in response) {
+							var containerElem = $('<div>').addClass('image-container').append(response.error); // create container div with img and p elements
+							$('#image-gallery').append(containerElem);
+
+						}
+						document.getElementById("loading").style.display = "none";
+						// document.getElementById("submit-button").disabled = false;
+
+					}
+
+				});
+			});
+		});
+	</script>
+	<script>
+		function stopService() {
+			// Make an API request using your preferred method (e.g., fetch, axios)
+			// Replace 'API_ENDPOINT_URL' with the actual URL of your API endpoint for stopping the service
+			fetch('stop_process', {
+				method: 'POST', // or 'GET', 'PUT', etc. depending on your API
+				// Add any necessary headers and body to the request
+				headers: {
+					'Content-Type': 'application/json',
+					// Add any other headers required by your API
+				},
+				body: JSON.stringify({
+					// Include any necessary data in the request body
+				}),
+			})
+				.catch(error => {
+					// Handle any errors that occurred during the API request
+					console.error(error);
+				});
+			document.getElementById("submit-button").disabled = false;
+			document.getElementById("stop-button").disabled = true;
+			window.to_stop_display_images = true;
+
+		}
+	</script
+
+	</body>
+</html>

@@ -1,0 +1,33 @@
+{
+    "PERSON_DETECTION_PARAMS":
+    {
+        "MODEL_WEIGHTS":"models/yolov5s.pt",
+        "MODEL_SOURCE":"db/group/",
+        "MODEL_DATA":"data/coco128.yaml",
+        "IMAGE_SIZE":680,680,
+        "CONFIDENCE_THRESHOLD":0.50,
+        "NMS_THRESHOLD":0.45,
+        "MAX_DETECTION":10,
+        "DEVICE":0,
+        "VIEW_IMAGE":"FALSE",
+        "SAVE_TEXT":"FALSE",
+        "SAVE_CONF":"FALSE",
+        "SAVE_CROP":"FALSE",
+        "NOSAVE":"FALSE",
+        "CLASSES":0,
+        "AGNOSTIC_NMS":"FALSE",
+        "AUGMENT":"FALSE",
+        "VISUALIZE":"FALSE",
+        "UPDATE":"FALSE",
+        "PROJECT":"D:/Project DS/pythonProject_CVBAS/model_processing_temp",
+        "NAME":"EXP",
+        "EXIST_OK":"FLASE",
+        "LINE_THICKNESS":3,
+        "HIDE_LABELS":"FALSE",
+        "HIDE_CONF":"TRUE",
+        "HALF":"FALSE",
+        "DNN":"FALSE",
+        "VID_STRIDE":25,
+        "FACE_THRESHOLD":0.4
+    }
+}
